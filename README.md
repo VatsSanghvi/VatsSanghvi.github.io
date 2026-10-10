@@ -1,2 +1,2 @@
 # VatsSanghvi.github.io
-I have used this repository to host my personal portfolio.
+Source for my personal portfolio at https://vatssanghvi.github.io: Business Analyst with an ERP and SAP background.

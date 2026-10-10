@@ -3,8 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vats Sanghvi — Data & Business Analyst</title>
-<meta name="description" content="Vats Sanghvi — Data & Business Analyst based in Canada. SQL · Python · Power BI · Tableau · KQL.">
+<title>Vats Sanghvi — Business Analyst · ERP &amp; SAP</title>
+<meta name="description" content="Vats Sanghvi, Business Analyst with an ERP and SAP background. Requirements gathering, functional specifications, SQL, Power BI and Tableau reporting, and ERP client support.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vatssanghvi.github.io/">
+<meta property="og:title" content="Vats Sanghvi — Business Analyst · ERP &amp; SAP">
+<meta property="og:description" content="Business Analyst with an ERP and SAP background. Requirements gathering, functional specifications, SQL, Power BI and Tableau reporting, and ERP client support.">
+<meta property="og:image" content="https://vatssanghvi.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vats Sanghvi, Business Analyst, ERP and SAP: requirements gathering, ERP systems, SAP ECC, SQL, Power BI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vatssanghvi.github.io/assets/og-image.png">
+<meta name="twitter:title" content="Vats Sanghvi — Business Analyst · ERP &amp; SAP">
+<meta name="twitter:description" content="Business Analyst with an ERP and SAP background. Requirements gathering, functional specifications, SQL, Power BI and Tableau reporting, and ERP client support.">
 <meta name="theme-color" content="#FAFAFA">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2309090B'/%3E%3Ctext x='31' y='44' font-family='Arial,sans-serif' font-weight='800' font-size='30' fill='white' text-anchor='middle'%3EV%3C/text%3E%3Ccircle cx='50' cy='16' r='5' fill='%232563EB'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,17 +172,7 @@ section{padding:120px 0;position:relative}
 .proj-shot{grid-column:1 / -1;margin-top:8px;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-md);background:var(--muted)}
 .proj-shot-bar{display:flex;gap:6px;padding:11px 14px;background:var(--surface);border-bottom:1px solid var(--border)}
 .proj-shot-bar span{width:9px;height:9px;border-radius:50%;background:var(--border)}
-.proj-shot img{display:block;width:100%;height:auto}
-
-/* mini bar chart (project 1 — DES vs AES, numbers already stated in copy) */
-.mini-chart{display:flex;flex-direction:column;gap:9px}
-.mc-row{display:flex;align-items:center;gap:9px}
-.mc-label{font-size:11px;font-weight:700;color:var(--faint);width:26px;letter-spacing:.03em}
-.mc-track{flex:1;height:7px;background:var(--muted);border-radius:4px;overflow:hidden}
-.mc-bar{height:100%;width:var(--val);border-radius:4px;background:var(--border);transform-origin:left}
-.mc-bar--accent{background:linear-gradient(90deg,var(--accent),var(--accent-deep))}
-.mc-val{font-size:11.5px;font-weight:700;color:var(--ink);width:32px;text-align:right;font-variant-numeric:tabular-nums}
-.mc-caption{font-size:11px;color:var(--faint);margin-top:1px}
+.proj-shot img,.proj-shot video{display:block;width:100%;height:auto}
 
 /* ---------- Experience timeline ---------- */
 #experience{border-top:1px solid var(--border);background:var(--muted)}
@@ -191,6 +193,9 @@ section{padding:120px 0;position:relative}
 .tl-card h3{font-size:1.18rem;font-weight:700;margin-bottom:2px;line-height:1.25}
 .tl-org{font-size:13.5px;color:var(--accent-deep);font-weight:600;margin-bottom:10px}
 .tl-card p{font-size:14.5px;color:var(--dim);margin:0}
+.tl-card ul{margin:10px 0 0 18px;display:flex;flex-direction:column;gap:6px}
+.tl-card li{font-size:14.5px;color:var(--dim);padding-left:2px}
+.tl-card li::marker{color:var(--accent)}
 .tl-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}
 .tl-tags span{font-size:11px;font-weight:600;color:var(--faint);border:1px solid var(--border);border-radius:5px;padding:3px 8px}
 
@@ -225,7 +230,7 @@ section{padding:120px 0;position:relative}
 #contact{border-top:1px solid var(--border);text-align:center}
 #contact h2{font-size:clamp(2.4rem,6vw,4.4rem);margin-bottom:18px}
 #contact>.wrap>p{max-width:480px;margin:0 auto 40px;font-size:16px}
-.email-link{display:inline-block;font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,4vw,2.2rem);color:var(--ink);text-decoration:none;border-bottom:3px solid var(--accent);padding-bottom:6px;margin-bottom:34px;transition:color .2s ease}
+.email-link{display:inline-block;font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,4vw,2.2rem);color:var(--ink);text-decoration:none;border-bottom:3px solid var(--accent);padding-bottom:6px;margin-bottom:34px;transition:color .2s ease;max-width:100%;overflow-wrap:anywhere}
 .email-link:hover{color:var(--accent)}
 #contact .btns{justify-content:center;margin-bottom:0}
 footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-size:13px;color:var(--faint)}
@@ -277,13 +282,13 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-
   </div>
   <canvas id="hero3d" class="hero-3d" aria-hidden="true"></canvas>
   <div class="wrap">
-    <div class="loc-eyebrow reveal"><span class="dot"></span>Available · Data &amp; Business Analyst</div>
+    <div class="loc-eyebrow reveal"><span class="dot"></span>Available · Business Analyst · ERP &amp; SAP</div>
     <h1 aria-label="Vats Sanghvi"><span id="heroName" aria-hidden="true">Vats Sanghvi</span></h1>
     <div class="stack-row reveal">
-      <span class="pill hot">SQL</span><span class="pill hot">Python</span><span class="pill hot">Power BI</span>
-      <span class="pill hot">Tableau</span><span class="pill hot">KQL</span>
+      <span class="pill hot">Requirements Gathering</span><span class="pill hot">ERP Systems</span><span class="pill hot">SAP ECC</span>
+      <span class="pill hot">SQL</span><span class="pill hot">Power BI</span>
     </div>
-    <p class="line reveal">Enterprise data, turned into decisions — by an analyst who started inside the SAP systems that generate it.</p>
+    <p class="line reveal">Business Analyst at Apical Software, gathering requirements and supporting ERP implementations for manufacturing and trading clients. I started as an SAP ABAP developer, so I know how ERP data is built before it reaches a report.</p>
     <div class="btns reveal">
       <a class="btn btn-p magnetic" href="#work">See the work</a>
       <a class="btn btn-g magnetic" href="mailto:vatssanghvi07@gmail.com">Email me</a>
@@ -291,10 +296,10 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-
   </div>
   <div class="ribbon reveal">
     <div class="wrap">
-      <div class="rb"><div class="n"><span data-count="9537">0</span></div><div class="l">sessions analyzed</div></div>
-      <div class="rb"><div class="n"><span data-count="81">0</span><em>%</em></div><div class="l">detection precision</div></div>
-      <div class="rb"><div class="n"><span data-count="1470">0</span></div><div class="l">records modeled</div></div>
-      <div class="rb"><div class="n"><span data-count="10">0</span><em>+</em></div><div class="l">API endpoints shipped</div></div>
+      <div class="rb"><div class="n"><span data-count="12">0</span><em>+</em></div><div class="l">manufacturing and trading clients</div></div>
+      <div class="rb"><div class="n"><span data-count="20">0</span><em>%</em></div><div class="l">less rework during ERP implementation</div></div>
+      <div class="rb"><div class="n"><span data-count="150">0</span><em>+</em></div><div class="l">client support tickets resolved</div></div>
+      <div class="rb"><div class="n"><span data-count="20">0</span><em>+</em></div><div class="l">SAP order-to-cash reports delivered</div></div>
     </div>
   </div>
 </header>
@@ -307,34 +312,36 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-
     <div class="proj tilt reveal">
       <div class="idx">01</div>
       <div>
-        <div class="tags"><span>KQL</span><span>Azure Data Explorer</span><span>SIEM</span></div>
-        <h3>Kusto Threat Hunting Lab</h3>
-        <p>7 production-style KQL query packs that hunt brute-force, protocol, and encryption threats — the way a real SOC does in Microsoft Sentinel.</p>
-        <a class="plink" href="https://github.com/VatsSanghvi/Kusto-Threat-Hunting-Lab" target="_blank" rel="noopener">View on GitHub <span class="arrow">→</span></a>
+        <div class="tags"><span>Python</span><span>Django</span><span>REST API</span><span>SQL</span><span>Power BI</span></div>
+        <h3>HelpDesk Pro</h3>
+        <p>A full-stack IT ticketing platform with role-based access control and tickets tracked across 7 lifecycle stages. It feeds a separate Power BI report, built with DAX, that tracks SLA compliance, CSAT, and resolution time, with CSV/Excel exports filterable by status, priority, assignee, and date.</p>
+        <a class="plink" href="https://github.com/VatsSanghvi/HelpDesk-Pro" target="_blank" rel="noopener">View on GitHub <span class="arrow">→</span></a>
       </div>
       <div class="p-stats">
-        <div><div class="n">9,537</div><div class="l">sessions analyzed</div></div>
-        <div><div class="n">81<em>%</em></div><div class="l">brute-force signature precision</div></div>
-        <div class="mini-chart" role="img" aria-label="Attack signature rate comparison: DES 53 percent, AES 40 percent">
-          <div class="mc-row"><span class="mc-label">DES</span><div class="mc-track"><div class="mc-bar mc-bar--accent" style="--val:53%"></div></div><span class="mc-val">53%</span></div>
-          <div class="mc-row"><span class="mc-label">AES</span><div class="mc-track"><div class="mc-bar" style="--val:40%"></div></div><span class="mc-val">40%</span></div>
-          <div class="mc-caption">attack signature rate</div>
-        </div>
+        <div><div class="n">7</div><div class="l">ticket lifecycle stages</div></div>
+        <div><div class="n">SLA · CSAT</div><div class="l">plus resolution-time KPIs in Power BI</div></div>
+        <div><div class="n">CSV · Excel</div><div class="l">exports by status, priority, assignee, and date</div></div>
+      </div>
+      <div class="proj-shot">
+        <div class="proj-shot-bar"><span></span><span></span><span></span></div>
+        <video controls preload="none" playsinline poster="assets/helpdesk-pro-demo.jpg" width="1920" height="1080" aria-label="30-second HelpDesk Pro demo: raising a ticket, SLA tracking, the in-app dashboard, and the Power BI report">
+          <source src="assets/helpdesk-pro-demo.mp4" type="video/mp4">
+          <a href="assets/helpdesk-pro-demo.mp4">Watch the HelpDesk Pro demo video</a>
+        </video>
       </div>
     </div>
 
     <div class="proj tilt reveal">
       <div class="idx">02</div>
       <div>
-        <div class="tags"><span>Python</span><span>Django</span><span>REST API</span></div>
-        <h3>HelpDesk Pro</h3>
-        <p>An IT ticketing platform with a live analytics dashboard, SLA breach alerts, and a full audit trail — demoed on a Manulife-style support scenario.</p>
-        <a class="plink" href="https://github.com/VatsSanghvi/HelpDesk-Pro" target="_blank" rel="noopener">View on GitHub <span class="arrow">→</span></a>
+        <div class="tags"><span>KQL</span><span>Azure Data Explorer</span></div>
+        <h3>Kusto Threat Hunting Lab</h3>
+        <p>Analyzed telemetry and log data in KQL on Azure Data Explorer to identify anomalies and recurring incident patterns, and wrote reusable query patterns for log correlation and filtering.</p>
+        <a class="plink" href="https://github.com/VatsSanghvi/Kusto-Threat-Hunting-Lab" target="_blank" rel="noopener">View on GitHub <span class="arrow">→</span></a>
       </div>
       <div class="p-stats">
-        <div><div class="n">10<em>+</em></div><div class="l">REST endpoints</div></div>
-        <div><div class="n">3</div><div class="l">access tiers (RBAC)</div></div>
-        <div><div class="n">100<em>%</em></div><div class="l">changes audit-logged</div></div>
+        <div><div class="n">Anomalies</div><div class="l">and recurring incident patterns in log data</div></div>
+        <div><div class="n">Reusable</div><div class="l">KQL patterns for log correlation and filtering</div></div>
       </div>
     </div>
 
@@ -368,54 +375,68 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-
       <div class="tl-item tl-item--now reveal">
         <div class="tl-rail"><span class="tl-dot"></span></div>
         <div class="tl-card">
-          <div class="tl-head"><span class="tl-year">2026</span><span class="tl-kind tl-kind--now">Now</span></div>
-          <h3>Open to analyst roles across Canada</h3>
-          <div class="tl-org">Data · Business · BI Analyst</div>
-          <p>Actively seeking analyst and BI/reporting roles. Authorized to work in Canada and open to relocating for the right team.</p>
+          <div class="tl-head"><span class="tl-year">Apr 2025 – Present</span><span class="tl-kind tl-kind--now">Now</span></div>
+          <h3>Business Analyst</h3>
+          <div class="tl-org">Apical Software · Rajkot, IN (Remote)</div>
+          <p>Client implementations and support for ApicalERP, an ERP platform for Indian manufacturers, traders, and job-work SMBs.</p>
+          <ul>
+            <li>Gathered and documented business requirements from 12+ manufacturing and trading clients and translated them into functional specifications, reducing rework during ERP implementation by 20%</li>
+            <li>Presented findings, dashboard insights and solution options to client owners and stakeholders, speeding up approval cycles for change requests by 22%</li>
+            <li>Wrote SQL queries to extract, clean and validate client ERP data across inventory, sales and finance modules, improving data accuracy for migration and reporting by 18%</li>
+            <li>Designed interactive Power BI and Tableau dashboards on sales, stock ageing and branch performance, cutting manual Excel reporting time for client teams by 25%</li>
+            <li>Resolved 150+ client support tickets on GST, e-invoicing and workflow issues through root-cause analysis, lowering repeat tickets by 15%</li>
+          </ul>
+          <div class="tl-tags"><span>Requirements</span><span>ERP Systems</span><span>SQL</span><span>Power BI</span><span>Tableau</span></div>
         </div>
       </div>
 
       <div class="tl-item reveal">
         <div class="tl-rail"><span class="tl-dot"></span></div>
         <div class="tl-card">
-          <div class="tl-head"><span class="tl-year">2024 – 2025</span><span class="tl-kind">Education</span></div>
-          <h3>PG — Big Data Solution Architecture</h3>
-          <div class="tl-org">Conestoga College · Waterloo, ON</div>
-          <p>Advanced data engineering and architecture: distributed processing, pipelines, and turning large, messy datasets into analytics-ready models.</p>
-          <div class="tl-tags"><span>Big Data</span><span>Python</span><span>KQL</span></div>
+          <div class="tl-head"><span class="tl-year">Sep 2024 – Apr 2025</span><span class="tl-kind">Education</span></div>
+          <h3>Graduate Certificate — Big Data Solution Architecture</h3>
+          <div class="tl-org">Conestoga College · Kitchener, ON</div>
         </div>
       </div>
 
       <div class="tl-item reveal">
         <div class="tl-rail"><span class="tl-dot"></span></div>
         <div class="tl-card">
-          <div class="tl-head"><span class="tl-year">2023 – 2024</span><span class="tl-kind">Education</span></div>
-          <h3>PG — Business Analytics</h3>
-          <div class="tl-org">Conestoga College · Waterloo, ON</div>
-          <p>Business intelligence, statistical analysis, and visualization — where the SQL, Power BI, and Tableau work behind these projects took shape.</p>
-          <div class="tl-tags"><span>Power BI</span><span>SQL</span><span>Tableau</span></div>
+          <div class="tl-head"><span class="tl-year">Sep 2023 – Apr 2024</span><span class="tl-kind">Education</span></div>
+          <h3>Graduate Certificate — Business Analytics</h3>
+          <div class="tl-org">Conestoga College · Kitchener, ON</div>
         </div>
       </div>
 
       <div class="tl-item reveal">
         <div class="tl-rail"><span class="tl-dot"></span></div>
         <div class="tl-card">
-          <div class="tl-head"><span class="tl-year">2023</span><span class="tl-kind tl-kind--work">Work</span></div>
-          <h3>SAP Analyst</h3>
-          <div class="tl-org">ADVAIT Business Solutions · Ahmedabad, IN</div>
-          <p>Built CDS views and OData services and automated recurring reporting delivered to 15+ stakeholders — the source-system foundation of how I read enterprise data today.</p>
-          <div class="tl-tags"><span>CDS Views</span><span>OData</span><span>SAP</span></div>
+          <div class="tl-head"><span class="tl-year">Jan 2023 – Jul 2023</span><span class="tl-kind tl-kind--work">Work</span></div>
+          <h3>SAP ABAP Developer</h3>
+          <div class="tl-org">Advait Business Solutions Pvt Ltd · Ahmedabad, IN</div>
+          <ul>
+            <li>Delivered 20+ order-to-cash reports for client projects by developing ALV, classical, and interactive reports using BAPI and BDC</li>
+            <li>Built module pool screens that let users insert and update records in custom tables without direct table access</li>
+            <li>Optimized existing ABAP programs by analyzing code for performance issues and correcting inefficient logic</li>
+            <li>Designed data dictionary objects, including tables, views, structures, search helps, lock objects, and TMGs, to meet client requirements</li>
+          </ul>
+          <div class="tl-tags"><span>SAP ABAP</span><span>ALV Reports</span><span>BAPI · BDC</span><span>Data Dictionary</span></div>
         </div>
       </div>
 
       <div class="tl-item reveal">
         <div class="tl-rail"><span class="tl-dot"></span></div>
         <div class="tl-card">
-          <div class="tl-head"><span class="tl-year">2022</span><span class="tl-kind tl-kind--work">Work</span></div>
-          <h3>SAP Analyst — Intern</h3>
-          <div class="tl-org">Kalpataru Power Transmission · Gandhinagar, IN</div>
-          <p>Developed ABAP and ALV reports and automated manual data extracts, cutting recurring extraction effort by roughly 50%.</p>
-          <div class="tl-tags"><span>SAP ABAP</span><span>ALV Reports</span><span>ECC</span></div>
+          <div class="tl-head"><span class="tl-year">May 2022 – Dec 2022</span><span class="tl-kind tl-kind--work">Work</span></div>
+          <h3>SAP ABAP Developer</h3>
+          <div class="tl-org">Kalpataru Power Transmission Ltd · Gandhinagar, IN</div>
+          <ul>
+            <li>Developed 9+ ALV, classical, and interactive reports for client projects by writing new ABAP programs</li>
+            <li>Created 3 custom tables and 5 data dictionary objects, with table maintenance generators, to store and maintain custom business data</li>
+            <li>Standardized business document output by designing Smart Forms layouts and styles</li>
+            <li>Added search helps, lock objects, and table types to support reliable data entry in custom tables</li>
+          </ul>
+          <div class="tl-tags"><span>SAP ABAP</span><span>ALV Reports</span><span>Smart Forms</span></div>
         </div>
       </div>
 
@@ -436,23 +457,36 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-
 <section id="skills">
   <div class="wrap">
     <span class="eyebrow reveal">03 — Toolkit</span>
-    <h2 class="sect-title reveal">Skills &amp; credentials.</h2>
+    <h2 class="sect-title reveal">Skills &amp; courses.</h2>
     <div class="skills-grid">
       <div class="card reveal">
-        <h3 class="tag">// core stack</h3>
+        <h3 class="tag">// business analysis</h3>
         <div class="badges">
-          <span class="pill hot">SQL</span><span class="pill hot">Power BI</span><span class="pill hot">Python</span>
-          <span class="pill hot">Tableau</span><span class="pill hot">KQL</span><span class="pill hot">Azure Data Explorer</span>
-          <span class="pill">Excel · DAX</span><span class="pill">Django REST</span>
-          <span class="pill">SAP ABAP</span><span class="pill">ECC / S/4HANA</span><span class="pill">CDS Views · OData</span>
+          <span class="pill hot">Requirements Gathering</span><span class="pill hot">Functional Specifications</span>
+          <span class="pill hot">Stakeholder Communication</span><span class="pill hot">Root-Cause Analysis</span>
+          <span class="pill hot">Data Validation</span>
         </div>
-        <div class="edge"><b>The edge:</b> years spent developing inside SAP source systems — I trace bad numbers to their root, not just report them.</div>
+        <h3 class="tag">// technical</h3>
+        <div class="badges">
+          <span class="pill">SQL</span><span class="pill">Power BI</span><span class="pill">Tableau</span>
+          <span class="pill">Excel</span><span class="pill">DAX</span><span class="pill">Python</span>
+          <span class="pill">SAP ABAP</span><span class="pill">KQL</span><span class="pill">Django</span>
+          <span class="pill">REST APIs</span><span class="pill">Troubleshooting</span>
+        </div>
+        <h3 class="tag">// tools</h3>
+        <div class="badges">
+          <span class="pill">ERP Systems</span><span class="pill">SAP ECC</span><span class="pill">Azure Data Explorer</span>
+          <span class="pill">Git</span><span class="pill">Microsoft 365</span>
+        </div>
+        <div class="edge"><b>The edge:</b> before business analysis, I spent about 15 months as an SAP ABAP developer building reports and data dictionary objects. I know how ERP data is structured before it reaches a dashboard.</div>
       </div>
       <div class="card reveal">
-        <h3 class="tag">// certifications</h3>
-        <div class="rowitem"><b>SQL for Data Analysis</b><span>LinkedIn Learning</span></div>
-        <div class="rowitem"><b>Business Analysis &amp; Process Management</b><span>Coursera</span></div>
-        <div class="rowitem"><b>PG Diplomas — Analytics &amp; Big Data</b><span>Conestoga College · 2023–25</span></div>
+        <h3 class="tag">// course certificates</h3>
+        <div class="rowitem"><b>SAP Core ABAP Programming</b></div>
+        <div class="rowitem"><b>Business Analysis and Process Management</b></div>
+        <div class="rowitem"><b>SQL for Data Analysis</b></div>
+        <div class="rowitem"><b>Power BI Data Visualization and Dashboard Tips</b></div>
+        <a class="plink" href="https://github.com/VatsSanghvi/Certifications" target="_blank" rel="noopener">All 13 course certificates <span class="arrow">→</span></a>
       </div>
     </div>
   </div>
@@ -480,11 +514,12 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-
 <section id="contact">
   <div class="wrap">
     <span class="eyebrow reveal">05 — Get in touch</span>
-    <h2 class="reveal">Let's talk data.</h2>
-    <p class="reveal">Seeking Data, Business &amp; BI Analyst roles across Canada. Authorized to work, open to relocate.</p>
+    <h2 class="reveal">Let's talk.</h2>
+    <p class="reveal">Open to Business Analyst, ERP and SAP analyst, data and reporting analyst, and support analyst roles.</p>
     <a class="email-link reveal" href="mailto:vatssanghvi07@gmail.com">vatssanghvi07@gmail.com</a>
     <div class="btns reveal">
-      <a class="btn btn-g magnetic" href="https://www.linkedin.com/in/vats-sanghvi" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-g magnetic" href="tel:+15483983777">+1 (548) 398-3777</a>
+      <a class="btn btn-g magnetic" href="https://www.linkedin.com/in/vats-sanghvi/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn btn-g magnetic" href="https://github.com/VatsSanghvi" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
@@ -542,11 +577,18 @@ document.querySelectorAll('.ribbon').forEach(el=>counterIO.observe(el));
   const el = document.getElementById('heroName');
   const text = el.textContent;
   el.innerHTML = '';
-  text.split('').forEach(ch=>{
-    const span = document.createElement('span');
-    span.className = 'ch';
-    span.textContent = ch === ' ' ? ' ' : ch;
-    el.appendChild(span);
+  /* group letters per word so lines only break between words */
+  text.split(' ').forEach((word,i)=>{
+    if(i) el.appendChild(document.createTextNode(' '));
+    const w = document.createElement('span');
+    w.style.whiteSpace = 'nowrap';
+    word.split('').forEach(ch=>{
+      const span = document.createElement('span');
+      span.className = 'ch';
+      span.textContent = ch;
+      w.appendChild(span);
+    });
+    el.appendChild(w);
   });
 })();
 
@@ -565,9 +607,6 @@ if(hasGsap && !reduced){
   gsap.to('.q-grid .q', {opacity:1, y:0, duration:.6, ease:'power2.out', stagger:.12, scrollTrigger:{trigger:'.q-grid', start:'top 85%'}});
   gsap.to('#work .proj', {opacity:1, y:0, duration:.6, ease:'power2.out', stagger:.1, scrollTrigger:{trigger:'#work .wrap', start:'top 80%'}});
   gsap.to('.timeline .tl-item', {opacity:1, y:0, duration:.55, ease:'power2.out', stagger:.1, scrollTrigger:{trigger:'.timeline', start:'top 82%'}});
-
-  gsap.set('.mini-chart .mc-bar', {scaleX:0});
-  gsap.to('.mini-chart .mc-bar', {scaleX:1, duration:1, ease:'power2.out', stagger:.15, scrollTrigger:{trigger:'.mini-chart', start:'top 88%'}});
 
   document.fonts && document.fonts.ready.then(()=>ScrollTrigger.refresh());
 }
